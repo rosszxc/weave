@@ -46,7 +46,7 @@ body{
 .video-container {
   justify-content: center;
   align-items: center;
-    width: 90vw; /* 90% of viewport vidth */
+    width: 80vw; /* 90% of viewport vidth */
     height: 50.625vw; /* ratio = 9/16 * 90 = 50.625 */
     max-height: 90vh;
     max-width: 160vh; /* 16/9 * 90 = 160 */

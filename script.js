@@ -1,9 +1,12 @@
-window.addEventListener('load', () => {
-  // Hide preloader
+document.addEventListener('DOMContentLoaded', () => {
   const preloader = document.querySelector('.preloader');
-  preloader.style.display = 'none';
+  const videoContainer = document.querySelector('.video-container');
+  const video = document.getElementById('main-video');
 
-  // Show content
-  const content = document.querySelector('.content');
-  content.style.display = 'block';
+  // Preload the video
+  video.addEventListener('loadeddata', () => {
+    preloader.style.display = 'none'; // Hide the preloader
+    videoContainer.style.display = 'block'; // Show the video container
+
+  });
 });

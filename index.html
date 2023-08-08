@@ -4,20 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  
   <title>Ross - Motion Design</title>
+  
+  <script type='text/javascript'>
+  
+
+  
+window.onload = function(){
+setInterval(function(){
+    document.querySelector(".cover").style.display = "none";
+	document.querySelector(".content").style.display = "block";
+	}, 2000);
+   }
+</script>
+
 </head>
 <body>
   <!-- Preloader -->
+	<div class="cover">
+<div class="preloader">
+    <video autoplay muted loop>
+        <source src="asset/cat 2.webm" type="video/webm" />
+    </video>
+    <div class="caption">
+      <h2>loading. . .</h2>
+    </div>
+</div>
+	</div>
 
 
   <!-- Actual content -->
   <div class="content">
     <!-- Your content goes here -->
+	<a href="mailto:rmalaque14@gmail.com" class="button">Rosswald Malaque | Gmail</a>
 
 	<div class="video-container">
 	
-	<a href="mailto:rmalaque14@gmail.com" class="button">Rosswald Malaque | Motion Design</a>
 	
     <video controls id="video">
       <source src="asset/2023 Ross.webm" type="video/webm">
